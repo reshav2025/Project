@@ -1,0 +1,65 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1260px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.header-nav {
+  background-color: #4e0250;
+  padding: 24px;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 48px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header-nav-link:hover {
+  color: #d3d3d3;
+}
+
+.footer {
+  background-color: #4e0250;
+  padding: 32px;
+  color: #fff;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 48px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: max-content;
+  margin-bottom: 48px;
+}
+
+.footer-nav-link:hover {
+  color: #d3d3d3;
+}
+
+.footer-text {
+  margin-inline: auto;
+  width: max-content;
+  font-size: 14px;
+}
