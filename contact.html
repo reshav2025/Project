@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Home</title>
+    <title>Contact Us</title>
   </head>
   <body>
     <nav class="header-nav">
       <div class="nav-bar container">
+        <a href="/index.html">
+          <img
+            src="photos/WhatsApp Image 2025-04-07 at 7.31.34 PM.jpeg"
+            alt=""
+            class="logo"
+          />
+        </a>
+
         <a class="header-nav-link" href="index.html">Home</a>
 
         <a class="header-nav-link" href="products.html">Our Products</a>
@@ -21,10 +29,60 @@
       </div>
     </nav>
     <div class="container">
-      <header class="header">
+      <form id="contactForm">
         <h1 class="header-title">Get in touch with us</h1>
-        <p class="header-description">Your tagline or description goes here.</p>
-      </header>
+        <input type="text" id="name" placeholder="Your Name" />
+        <div id="nameError" class="error"></div>
+
+        <input type="email" id="email" placeholder="Your Email" />
+        <div id="emailError" class="error"></div>
+
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+        <div id="messageError" class="error"></div>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <script>
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          document.getElementById("nameError").textContent = "";
+          document.getElementById("emailError").textContent = "";
+          document.getElementById("messageError").textContent = "";
+
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const message = document.getElementById("message").value.trim();
+
+          let hasError = false;
+
+          if (!name) {
+            document.getElementById("nameError").textContent =
+              "Name is required.";
+            hasError = true;
+          }
+
+          if (!email || !email.includes("@")) {
+            document.getElementById("emailError").textContent =
+              "Valid email is required.";
+            hasError = true;
+          }
+
+          if (!message) {
+            document.getElementById("messageError").textContent =
+              "Message cannot be empty.";
+            hasError = true;
+          }
+
+          if (!hasError) {
+            alert("Thank you! Your message has been sent.");
+            form.reset();
+          }
+        });
+      </script>
     </div>
 
     <footer class="footer">

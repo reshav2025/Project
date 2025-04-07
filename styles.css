@@ -22,11 +22,17 @@ body {
   padding: 24px;
 }
 
+.logo {
+  height: 48px;
+  margin-right: 48px;
+}
+
 .nav-bar {
   display: flex;
   gap: 48px;
   margin: 0 auto 0 auto;
   padding: 0;
+  align-items: center;
 }
 
 .header-nav-link {
@@ -442,11 +448,17 @@ h2 {
 
 .showroom .content_content {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
   align-items: center;
   gap: 64px;
+}
+
+.showroom .content_content table {
+  width: 100%;
+}
+
+td {
+  padding-block: 48px;
 }
 
 .showroom .content_content h3 {
@@ -458,4 +470,33 @@ h2 {
   width: 100%;
   margin-top: 48px;
   border-radius: 16px;
+}
+
+/* Contact page styles */
+
+#contactForm {
+  margin-block: 48px 64px;
+}
+
+form {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
 }
