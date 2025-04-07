@@ -63,3 +63,221 @@ body {
   width: max-content;
   font-size: 14px;
 }
+
+.home-about {
+  background-image: url(https://images.pexels.com/photos/3787027/pexels-photo-3787027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 545px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 64px;
+}
+
+.home-about .contents {
+  max-width: 1260px;
+  margin-inline: auto;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.contents h1 {
+  margin: 0 0 24px 0;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.content_content {
+  text-align: center;
+  width: 50%;
+}
+
+.content_content p {
+  padding: 0 0 32px 0;
+  font-size: 21px;
+}
+
+.content_content a {
+  background: #fff;
+  padding: 16px 24px;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.image-to-left {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 64px;
+  align-items: center;
+}
+
+.image-to-left img {
+  width: 50%;
+  height: 450px;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 0;
+  text-align: left;
+}
+
+.image-to-left p {
+  margin-bottom: 0;
+  padding-bottom: 48px;
+  font-size: 21px;
+}
+
+.image-to-left a {
+  background: #4e0250;
+  padding: 16px 24px;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.why-us {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.why-us img {
+  height: 450px;
+  width: 50%;
+}
+
+.why-us ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.why-us li {
+  font-size: 21px;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.why-us_item::before {
+  content: "☑";
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.new-arrival {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.image-grid img:hover {
+  box-shadow: 6px -1px 19px -8px rgba(0, 0, 0, 0.75);
+}
+
+.image-grid img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.new-arrival .content_content {
+  text-align: left;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 64px;
+  align-items: center;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.list {
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.list:hover {
+  box-shadow: 6px -1px 19px -8px rgba(0, 0, 0, 0.75);
+}
+
+.list a{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  color: #000;
+  text-shadow: #d3d3d3;
+}
+
+.kitchen {
+  background-image: url(https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.storage {
+  background-image: url(https://images.pexels.com/photos/9475697/pexels-photo-9475697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.home {
+  background-image: url(https://images.pexels.com/photos/7350942/pexels-photo-7350942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.dining {
+  background-image: url(https://images.pexels.com/photos/14958681/pexels-photo-14958681/free-photo-of-breakfast-on-table-in-apartment.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.stay-connected {
+  margin-bottom: 64px;
+  padding: 32px;
+  border: 1px solid #4e0250;
+  border-radius: 12px;
+}
+
+.stay-connected .content_content {
+  width: 100%;
+}
+
+.stay-connected .content_content p {
+  padding: 0;
+}
+
+.stay-connected h2 {
+  text-align: center;
+}
+
+.stay-connected button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
