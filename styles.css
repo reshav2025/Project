@@ -1,6 +1,7 @@
 html {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,7 +42,7 @@ body {
 
 .footer {
   background-color: #4e0250;
-  padding: 32px;
+  padding: 84px 32px;
   color: #fff;
 }
 
@@ -63,6 +64,8 @@ body {
   width: max-content;
   font-size: 14px;
 }
+
+/* Home page styles */
 
 .home-about {
   background-image: url(https://images.pexels.com/photos/3787027/pexels-photo-3787027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -229,7 +232,7 @@ h2 {
   box-shadow: 6px -1px 19px -8px rgba(0, 0, 0, 0.75);
 }
 
-.list a{
+.list a {
   text-decoration: none;
   font-size: 24px;
   font-weight: 900;
@@ -280,4 +283,125 @@ h2 {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+
+/* Product page styles */
+
+.products {
+  margin-top: 64px;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.product-category {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-block: 48px;
+  gap: 16px;
+}
+
+.product-category a {
+  text-decoration: none;
+  background: #4e0250;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+}
+
+.product-category a:hover {
+  box-shadow: 6px -1px 19px -8px rgba(0, 0, 0, 0.75);
+}
+
+.category-item-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.category-card {
+  border: 1px solid #4e0250;
+  border-radius: 16px;
+}
+
+.category-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.category-card .description {
+  padding: 24px;
+}
+
+.description h3 {
+  font-size: 21px;
+  margin-top: 0;
+}
+
+.description p {
+  font-size: 16px;
+}
+
+.cart {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: #4e0250;
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* Gallery Styles */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gallery img:hover {
+  box-shadow: 6px -1px 19px -8px rgba(0, 0, 0, 0.75);
+}
+
+.gallery a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}
+
+.gallery a:hover::before {
+  content: "View Photo";
+  font-size: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+}
+
+.gallery a:hover::after {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  background-color: #0000008c;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  border-radius: 16px;
 }
